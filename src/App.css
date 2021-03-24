@@ -1,0 +1,9 @@
+body {
+    background: #EEE5E9;
+    background: url(./images/tv.jpg) no-repeat center  center fixed;
+    -webkit-background: cover;
+    -moz-background: cover;
+    -o-background: cover;
+   
+    overflow: scroll;
+}
