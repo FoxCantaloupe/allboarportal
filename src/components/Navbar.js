@@ -5,6 +5,8 @@ import MenuIcon from '@material-ui/icons/Menu';
 import React, {useState} from 'react';
 import avatar from "../images/avatar.jpg";
 import { Link } from 'react-router-dom';
+import { SocialIcon} from 'react-social-icons';
+import socialIcon from 'react-social-icons/build/social-icon';
 
 const useStyles = makeStyles(theme=>({
     menuSliderContainer: {
@@ -74,7 +76,15 @@ const Navbar = () => {
                 </Link>
                 
                     ))}
+                <div className="inline-flex py-3 px-3 my-6" style={{justifyContent:"space-between"}}>
+                <SocialIcon url="https://github.com/FoxCantaloupe" className="mr-4" target="_blank" fgColor="#fff" style={{height: "35px", width: "35px"}}/>
+                <SocialIcon url="https://twitter.com/JoseLop35491374" className="mr-4" target="_blank" fgColor="#fff" style={{height: 35, width: 35}}/>
+                <SocialIcon url="https://www.linkedin.com/in/jose-lopez-428a62143/" className="mr-4" target="_blank" fgColor="#fff" style={{height: 35, width: 35}}/>
+                </div>
             </List>
+     
+            
+
 
         </Box>
 
@@ -94,6 +104,7 @@ const Navbar = () => {
                     <MobileRightMenuSlider anchor="right" open={state.right}
                     onClose={toggleSlider("right", false)}>
                         {sideList("right")}
+                        
                     </MobileRightMenuSlider>
                 </Toolbar>
             </AppBar>  
